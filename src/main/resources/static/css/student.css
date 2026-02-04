@@ -1,0 +1,91 @@
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/images/background.jpg'); /* Add your background image in static/images */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px 60px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    min-width: 400px;
+}
+
+h1 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+input, select, button {
+    padding: 10px 15px;
+    margin: 10px 0;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button, .btn {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+button:hover, .btn:hover {
+    background-color: #155ab6;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f1f3f4;
+    color: #333;
+}
+
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+.logout-form {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.delete-btn {
+    background-color: #e84545;
+}
+
+.delete-btn:hover {
+    background-color: #b33c3c;
+}

@@ -1,0 +1,88 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* BACKGROUND */
+body {
+    min-height: 100vh;
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    background:
+            linear-gradient(
+                    rgba(0, 0, 0, 0.45),
+                    rgba(0, 0, 0, 0.45)
+            ),
+            url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* REGISTER CARD */
+.register-card {
+    width: 100%;
+    max-width: 380px;
+    background: white;
+    padding: 32px 34px;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* TITLE */
+.register-card h2 {
+    font-weight: 500;
+    margin-bottom: 22px;
+    color: #202124;
+}
+
+/* INPUTS + SELECT */
+.register-card input,
+.register-card select {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 14px;
+    border-radius: 6px;
+    border: 1px solid #dadce0;
+    font-size: 14px;
+    background: white;
+}
+
+.register-card input:focus,
+.register-card select:focus {
+    outline: none;
+    border-color: #1a73e8;
+}
+
+/* BUTTON */
+.register-card button {
+    width: 100%;
+    padding: 12px;
+    background: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.register-card button:hover {
+    background: #1558b0;
+}
+
+/* LINK */
+.register-card a {
+    display: inline-block;
+    margin-top: 16px;
+    color: #1a73e8;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.register-card a:hover {
+    text-decoration: underline;
+}
