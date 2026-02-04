@@ -2,15 +2,38 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Create Student</title>
+    <link rel="stylesheet" th:href="@{/css/student-create.css}">
 </head>
 <body>
-<h1>Create Student</h1>
-<form th:action="@{/students}" th:object="${student}" method="post">
-    First Name: <input type="text" th:field="*{firstName}" /><br/>
-    Last Name: <input type="text" th:field="*{lastName}" /><br/>
-    Email: <input type="email" th:field="*{email}" /><br/>
-    <button type="submit">Save</button>
-</form>
-<a href="/students">Back</a>
+
+<div class="container">
+
+    <h1>Add New Student</h1>
+
+    <form th:action="@{/students}" th:object="${student}" method="post" class="form">
+
+        <input type="text"
+               th:field="*{firstName}"
+               placeholder="First Name"
+               required />
+
+        <input type="text"
+               th:field="*{lastName}"
+               placeholder="Last Name"
+               required />
+
+        <input type="email"
+               th:field="*{email}"
+               placeholder="Email"
+               required />
+
+        <button type="submit" class="btn">Save Student</button>
+
+    </form>
+
+    <a href="/students" class="link">← Back to Students</a>
+
+</div>
+
 </body>
 </html>
